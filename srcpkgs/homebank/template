@@ -1,6 +1,6 @@
 # Template file for 'homebank'
 pkgname=homebank
-version=5.8
+version=5.10
 revision=1
 build_style=gnu-configure
 hostmakedepends="intltool pkg-config"
@@ -12,7 +12,7 @@ license="GPL-2.0-or-later"
 homepage="https://www.gethomebank.org/en/index.php"
 changelog="https://www.gethomebank.org/ChangeLog"
 distfiles="https://www.gethomebank.org/public/sources/homebank-${version}.tar.gz"
-checksum=b608dccf8ce79f0fbee650682435ad1caa5114435f334c41a728467fc9c0002c
+checksum=783fd8bb2ebba09713e5d7c183d454f4a4393e828af5763f768b48afabc54386
 
 post_patch() {
 	vsed -i -e 's/DATADIRNAME=lib/DATADIRNAME=share/' configure
